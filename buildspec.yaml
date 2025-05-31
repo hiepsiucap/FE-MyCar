@@ -2,10 +2,6 @@
 
 version: 0.2
 
-env:
-  variables:
-    VITE_API_BACKEND: "http://localhost:8080"
-
 phases:
   install:
     runtime-versions:
