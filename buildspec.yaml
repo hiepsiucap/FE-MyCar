@@ -1,0 +1,30 @@
+# @format
+
+version: 0.2
+
+env:
+  variables:
+    VITE_API_BACKEND: "http://localhost:8080"
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing dependencies...
+      - npm install
+
+  pre_build:
+    commands:
+      - echo Writing .env file...
+      - echo "VITE_API_BACKEND=$VITE_API_BACKEND" > .env
+
+  build:
+    commands:
+      - echo Building Vite project...
+      - npm run build
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: dist
