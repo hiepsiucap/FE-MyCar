@@ -1,13 +1,9 @@
 /** @format */
-import carrent from "../assets/carrent.png";
-import phonecall from "../assets/phonecall.png";
-import imagegallery from "../assets/imagegallery.png";
-import registercar from "../assets/registercar.jpg";
 import { useEffect } from "react";
 import { year } from "../Utiliz/Constants";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
-import Swal, { swal } from "sweetalert2/dist/sweetalert2.js";
+import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/src/sweetalert2.scss";
 import { useNavigate } from "react-router-dom";
 import { carbrands } from "../Utiliz/Constants";
