@@ -87,7 +87,7 @@ const { id } = useParams();
   useEffect(()=>{
    const fetchData=async()=>
     {
-      const responsedata= await getRequest(`http://localhost:8080/api/cars/${id}`)
+      const responsedata= await getRequest(`${import.env.}/api/cars/${id}`)
       changedata(responsedata);
     }
     fetchData();
@@ -156,7 +156,7 @@ const { id } = useParams();
       }
   },[total])
   const AddCartHandler =async()=>{
-     const dt= await getRequest("http://localhost:8080/users/current");
+     const dt= await getRequest(`${import.meta.env.VITE_API_BACKEND}/users/current`);
     if(dt?.driverLicenseCheck =='N' ||!dt?.driverLicenseCheck)
       {
         return  Swal.fire({

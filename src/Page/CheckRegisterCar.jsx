@@ -73,7 +73,7 @@ const CheckRegisterCar = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         const response = await patchRequest(
-          `http://localhost:8080/api/cars/${e.target.id}`,
+          `${import.meta.env.VITE_API_BACKEND}/api/cars/${e.target.id}`,
           { status: "active" }
         );
         if (response.error) {
@@ -99,7 +99,7 @@ const CheckRegisterCar = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         const response = await patchRequest(
-          `http://localhost:8080/api/cars/${e.target.id}`,
+          `${import.meta.env.VITE_API_BACKEND}/api/cars/${e.target.id}`,
           { status: "active" }
         );
         if (response.error) {
@@ -126,7 +126,7 @@ const CheckRegisterCar = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         const response = await patchRequest(
-          `http://localhost:8080/api/cars/${e.target.id}`,
+          `${import.meta.env.VITE_API_BACKEND}/api/cars/${e.target.id}`,
           { status: "pending" }
         );
         if (response.error) {
