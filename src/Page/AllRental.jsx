@@ -175,7 +175,7 @@ const AllRental = () => {
         return;
       } else {
         const response = await postRequest(
-          `${import.meta.env.VITE_API_BACKEND}/${rentalID}/reviews`,
+          `${import.meta.env.VITE_API_BACKEND}/rentals/${rentalID}/reviews`,
           {
             details: datasubmit.details,
             rate: Number(datasubmit.rate),
