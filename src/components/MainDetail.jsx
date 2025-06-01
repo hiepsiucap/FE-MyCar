@@ -138,6 +138,7 @@ const MainDetail = () => {
   const [EndHour, ChangeEnd] = useState("20:00");
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
+    // Update
     subtitle.style.color = "##000000";
   }
   function closeModal() {
