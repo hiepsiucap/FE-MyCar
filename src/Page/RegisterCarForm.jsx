@@ -199,7 +199,7 @@ const RegisterCarForm = () => {
         province: ProvinceName.ProvinceName,
       };
       const response = await postRequest(
-        `${import.meta.env.VITE_API_BACKEND}:8080/api/cars`,
+        `${import.meta.env.VITE_API_BACKEND}/api/cars`,
         data
       );
       if (response.error) {
