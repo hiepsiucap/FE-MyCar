@@ -23,12 +23,8 @@ const CarComponent = ({ c }) => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          // eslint-disable-next-line react/jsx-no-comment-textnodes
           className=" flex shadow-md flex-col rounded-md"
         >
-          // eslint-disable-next-line react/prop-types, react/prop-types,
-          react/prop-types, react/prop-types, react/prop-types,
-          react/prop-types, react/prop-types, react/prop-types, react/prop-types
           <img
             src={c.image}
             alt=""
