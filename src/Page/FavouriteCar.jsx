@@ -28,7 +28,7 @@ const FavouriteCar = () => {
   }, [reload]);
   const onclickHandler = async (e) => {
     const responsedata = await patchRequest(
-      `${import.meta.env.VITE_API_BACKEND}a/rentals/${
+      `${import.meta.env.VITE_API_BACKEND}/rentals/${
         e.target.id
       }?status=confirmed`,
       {}

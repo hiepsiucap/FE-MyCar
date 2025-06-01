@@ -170,7 +170,6 @@ const Booking = () => {
               </label>
               <input
                 type="text"
-                disabled
                 id="pn"
                 name="fname"
                 className="px-1 py-2.5 border border-slate-300 w-full rounded-lg"
