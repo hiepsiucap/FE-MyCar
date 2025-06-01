@@ -46,7 +46,7 @@ const CheckRegisterCar = () => {
   useEffect(() => {
     const getData = async () => {
       const responsedata = await getRequest(
-        `${import.meta.env.VITE_API_BACKEND}:8080/api/cars/null-cars`
+        `${import.meta.env.VITE_API_BACKEND}/api/cars/null-cars`
       );
       if (responsedata.error) {
         console.log(responsedata.message);
