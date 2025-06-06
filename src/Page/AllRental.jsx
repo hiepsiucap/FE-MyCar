@@ -118,6 +118,7 @@ const AllRental = () => {
   }
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
+    // eslint-disable-next-line no-undef
     subtitle.style.color = "#f00";
   }
 
@@ -137,7 +138,7 @@ const AllRental = () => {
       ) {
         isError(true);
         Swal.fire({
-          title: "Vui lòng điền đủ thông tin!",
+          title: "Vui lòng điền đủ thông tin!!",
           text: "Kiểm tra bạn đã điền đủ thông tin hay chưa!",
           icon: "error",
         });
